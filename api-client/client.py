@@ -1,4 +1,5 @@
 import argparse
+import os
 import hashlib
 import hmac
 import json
@@ -86,6 +87,9 @@ def api_cmd(api, token, w_lvl=warning_lvl, d_lvl=disable_lvl):
     if api_access == 'private':
         api_call += f'&token={token}'
 
+    for i in range(len(api_args)):
+        api_call += f'&{api_args[i]}=' + input(f'> {api_args[i]} : ')
+
     req = f'{url}?method={api_call}'
     if api_method == 'GET':
         print('GET ', req)
@@ -96,8 +100,8 @@ def api_cmd(api, token, w_lvl=warning_lvl, d_lvl=disable_lvl):
     else:
         raise NotImplementedError
 
-    print(r.text)
-    return
+    # r.text without blank lines
+    print(os.linesep.join([s for s in r.text.splitlines() if s]))
 
 
 while True:
