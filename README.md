@@ -37,3 +37,10 @@
   * [NB6VAC telnet et autres infos cachées de la box](https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/) ([web.archive.org](https://web.archive.org/web/20230131164850/https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/))
 * [reboot_nb6.sh](https://gist.github.com/notFloran/5788412/revisions)
 
+## Sources
+
+* doc/
+  * [api_rest_3.2_2012.pdf](https://lafibre.info/images/altice/201207_sfr_api-rest.pdf)
+  * [api_rest_4.0_2016.pdf](https://lafibre.info/sfr-les-news/spec-api-rest-box-de-sfr/)
+  * [Compatibilites_Femtocell_Box_Modems_2018.pdf](https://cdn.woopic.com/c10f167280f2414abb346a5347e1ecd9/crc-files/content/download/65352/2687033/version/2/file/box_compatible_femtocell.pdf)
+ 
