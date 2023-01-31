@@ -72,8 +72,13 @@ def api_cmd(api, token, is_authenticated):
     if api_access == 'private':
         api_call += f'&token={token}'
 
+    req = f'{url}?method={api_call}'
     if api_method == 'GET':
-        r = requests.get(f'{url}?method={api_call}')
+        print('GET ', req)
+        r = requests.get(req)
+    elif api_method == 'POST':
+        print('POST', req)
+        r = requests.post(req)
     else:
         raise NotImplementedError
 
