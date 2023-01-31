@@ -1,22 +1,553 @@
 {
-  "lan": {
-    "getDnsHostList": {
-      "Request Methods": "GET",
-      "Access": "public"
+  "auth": {
+    "getToken": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
     },
-    "getHostsList": {
-      "Request Methods": "GET",
-      "Access": "public"
+    "checkToken": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": ["token", "hash"],
+      "warning": 0
     }
   },
+
+  "backup3g": {
+    "forceDataLink": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["mode"],
+      "warning": 2
+    },
+    "forceVoipLink": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["mode"],
+      "warning": 2
+    },
+    "getPinCode": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "setPinCode": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["pincode"],
+      "warning": 3
+    }
+  },
+
+  "ddns": {
+    "disable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "enable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "forceUpdate": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "setService": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["service", "username", "password", "hostname"],
+      "warning": 2
+    }
+  },
+
+  "dsl": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "ftth": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "firewall": {
+    "enableSmtpFilter": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 3
+    },
+    "disableSmtpFilter": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 3
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "hotspot": {
+    "enable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "disable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "getClientList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "restart": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "start": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "stop": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    }
+  },
+
+  "lan": {
+    "addDnsHost": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["ip", "name"],
+      "warning": 3
+    },
+    "deleteDnsHost": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["ip", "name"],
+      "warning": 3
+    },
+    "getDnsHostList": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    },
+    "getHostsList": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "ont": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    },
+    "sync": {
+      "requestMethods": "POST",
+      "access": "public",
+      "args": [],
+      "warning": 1
+    },
+    "push": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["name", "value"],
+      "warning": 3
+    },
+    "pull": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    }
+  },
+
+  "p910nd": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "ppp": {
+    "getCredentials": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    },
+    "setCredentials": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["login", "password"],
+      "warning": 5
+    }
+  },
+
+  "smb": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
   "system": {
     "getInfo": {
-      "Request Methods": "GET",
-      "Access": "public"
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    },
+    "getIfList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
     },
     "getWpaKey": {
-      "Request Methods": "GET",
-      "Access": "private"
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "reboot": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "setNetMode": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["mode"],
+      "warning": 5
+    },
+    "setRefClient": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["refclient"],
+      "warning": 5
+    }
+  },
+
+  "tv": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "usb": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "voip": {
+    "getCallhistoryList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "restart": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "start": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "stop": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    }
+  },
+
+  "wan": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
+  "wlan": {
+    "disable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "enable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 2
+    },
+    "getClientList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "getScanList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "setChannel": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["channel"],
+      "warning": 2
+    },
+    "setWl0Enc": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["enc"],
+      "warning": 1
+    },
+    "setWl0Enctype": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["enctype"],
+      "warning": 1
+    },
+    "setWl0Keytype": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["keytype"],
+      "warning": 1
+    },
+    "setWl0Ssid": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["ssid"],
+      "warning": 1
+    },
+    "setWl0Wepkey": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["wepkey"],
+      "warning": 1
+    },
+    "setWl0Wpakey": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["wpakey"],
+      "warning": 1
+    },
+    "setWlanMode": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["mode"],
+      "warning": 1
+    },
+    "restart": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "start": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    },
+    "stop": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 1
+    }
+  },
+
+  "wlan5": {
+    "getClientList": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "setChannel": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["channel"],
+      "warning": 2
+    },
+    "setWl0Enc": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["enc"],
+      "warning": 1
+    },
+    "setWl0Enctype": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["enctype"],
+      "warning": 1
+    },
+    "setWl0Keytype": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["keytype"],
+      "warning": 1
+    },
+    "setWl0Ssid": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["ssid"],
+      "warning": 1
+    },
+    "setWl0Wepkey": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["wepkey"],
+      "warning": 1
+    },
+    "setWl0Wpakey": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["wpakey"],
+      "warning": 1
+    },
+    "setWlanMode": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["mode"],
+      "warning": 1
+    }
+  },
+
+  "guest": {
+    "getInfo": {
+      "requestMethods": "GET",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "enable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "disable": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": [],
+      "warning": 0
+    },
+    "setSsid": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["ssid"],
+      "warning": 0
+    },
+    "setWpakey": {
+      "requestMethods": "POST",
+      "access": "private",
+      "args": ["wpakey"],
+      "warning": 0
     }
   }
 }
