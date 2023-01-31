@@ -1,0 +1,22 @@
+{
+  "lan": {
+    "getDnsHostList": {
+      "Request Methods": "GET",
+      "Access": "public"
+    },
+    "getHostsList": {
+      "Request Methods": "GET",
+      "Access": "public"
+    }
+  },
+  "system": {
+    "getInfo": {
+      "Request Methods": "GET",
+      "Access": "public"
+    },
+    "getWpaKey": {
+      "Request Methods": "GET",
+      "Access": "private"
+    }
+  }
+}
