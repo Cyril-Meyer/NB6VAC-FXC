@@ -1,8 +1,10 @@
 import argparse
 import hashlib
 import hmac
+import json
 import requests
 from xml.etree import ElementTree
+from pick import pick
 import utils
 
 parser = argparse.ArgumentParser()
@@ -47,3 +49,38 @@ def auth(url, username, password):
 
 
 token, is_authenticated = auth(url, username, password)
+
+with open('api.json', 'r') as f:
+    api = json.load(f)
+
+
+def api_cmd(api, token, is_authenticated):
+    options = list(api.keys())
+    option, index = pick(options)
+    api_1 = option
+
+    api = api[api_1]
+    options = list(api.keys())
+    option, index = pick(options)
+    api_2 = option
+
+    api = api[api_2]
+    api_call = api_1 + '.' + api_2
+    api_method = api['Request Methods']
+    api_access = api['Access']
+
+    if api_access == 'private':
+        api_call += f'&token={token}'
+
+    if api_method == 'GET':
+        r = requests.get(f'{url}?method={api_call}')
+    else:
+        raise NotImplementedError
+
+    print(r.text)
+    return
+
+
+while True:
+    input("Press Enter to continue...")
+    api_cmd(api, token, is_authenticated)
