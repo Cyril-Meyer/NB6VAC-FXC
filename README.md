@@ -13,3 +13,7 @@
 | Version principale    | NB6VAC-MAIN-R4.0.45d   |
 | Version de secours    | NB6VAC-MAIN-R4.0.44k   |
 | Version driver DSL    | NB6VAC-XDSL-A2pv6F039p |
+
+| ![home_sb1](img/home_sb1.png) |
+|--|
+| NB6VAC-FXC |
