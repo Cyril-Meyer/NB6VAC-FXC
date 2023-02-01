@@ -18,6 +18,21 @@
 |--|
 | NB6VAC-FXC |
 
+## api-client
+```
+usage: client.py [-h] [--hostname HOSTNAME] [--username USERNAME]
+                 [--password PASSWORD] [--warning-level WARNING_LEVEL]
+                 [--disable-level DISABLE_LEVEL]
+```
+
+| Main Menu | Submenu (wlan) |
+|--|--|
+| ![](img/capture/menu_1.png) | ![](img/capture/menu_2_wlan.png) |
+
+| auth.getToken () | system.getInfo |
+|--|--|
+| ![](img/capture/auth_getToken.png) | ![](img/capture/system_getInfo.png) |
+
 
 ## Hidden web page
 
