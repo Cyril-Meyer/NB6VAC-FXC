@@ -1,4 +1,13 @@
 {
+  "api": {
+    "routes": {
+      "requestMethods": "GET",
+      "access": "public",
+      "args": [],
+      "warning": 0
+    }
+  },
+
   "auth": {
     "getToken": {
       "requestMethods": "GET",
