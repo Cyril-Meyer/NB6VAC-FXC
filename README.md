@@ -45,12 +45,13 @@ usage: client.py [-h] [--hostname HOSTNAME] [--username USERNAME]
 
 ## Public Documentations
 
+* [openwrt.org NB6VAC firmware](https://forum.openwrt.org/t/install-openwrt-on-nb6-nb6v-sfr/53153/17)
 * [deviwiki.com/wiki/SFR_Neufbox_6](https://deviwiki.com/wiki/SFR_Neufbox_6) ([web.archive.org](https://web.archive.org/web/20230131163452/https://deviwiki.com/wiki/SFR_Neufbox_6))
 * [fr.wikipedia.org/wiki/La_box_de_SFR](https://fr.wikipedia.org/wiki/La_box_de_SFR)
 * ~~[openbox4.fhocorp.com](http://openbox4.fhocorp.com/doc/)~~ ➡️ [web.archive.org](https://web.archive.org/web/20220309022737/http://openbox4.fhocorp.com/doc/)
-* lafibre.info
-  * [NB6VAC telnet et autres infos cachées de la box](https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/) ([web.archive.org](https://web.archive.org/web/20230131164850/https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/))
-* [reboot_nb6.sh](https://gist.github.com/notFloran/5788412/revisions)
+* [lafibre.info NB6VAC telnet et autres infos cachées de la box](https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/) ([web.archive.org](https://web.archive.org/web/20230131164850/https://lafibre.info/sfr-la-fibre/nb6vac-telnet-et-autres-infos-cachees-de-la-box/))
+* [neufbox4.org Flasher une NB6](http://web.archive.org/web/20170816192614/https://www.neufbox4.org/wiki/index.php?title=Flasher_une_NB6)
+* [github.com reboot_nb6.sh](https://gist.github.com/notFloran/5788412/revisions)
 
 ## Sources
 
