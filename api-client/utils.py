@@ -1,5 +1,34 @@
 import sys
 from collections import defaultdict
+import xml.etree.ElementTree as ET
+
+
+def api_from_xml(xml_filename):
+    tree = ET.parse(xml_filename)
+    api = dict()
+
+    for child in tree.getroot():
+        route = child.attrib['route']
+        route = route.split('=')[1].split('.')
+        if len(route) == 1:
+            route1 = 'misc'
+            route2 = route[0]
+        elif len(route) == 2:
+            route1 = route[0]
+            route2 = route[1]
+        else:
+            raise NotImplementedError
+
+        if not route1 in api:
+            api[route1] = dict()
+
+        credential = child.attrib['credential'].split('|')
+
+        for type in child.attrib['type'].split('|'):
+            api[route1][route2] = {'type:': type,
+                                   'credential': credential}
+
+    return api
 
 
 # source : https://stackoverflow.com/questions/7684333/converting-xml-to-dictionary-using-elementtree
